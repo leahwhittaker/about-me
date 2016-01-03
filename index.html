@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Leah Whittaker - Front-End Developer</title>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
+    <link href='main.css' rel='stylesheet' type='text/css'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js"></script>
+
+    <meta name=viewport content="width=device-width, initial-scale=1">
+
+    <script>
+        window.onload = function () {
+
+            var loadHidden = document.getElementsByClassName("hide-load");
+            for (var i = loadHidden.length-1; i >= 0; i--) {
+                loadHidden[i].classList.remove("hide-load");
+            }
+
+            var lines = document.getElementsByClassName("content-line")
+
+            TweenMax.staggerFrom(lines, 0.5, {opacity:0, /*rotationX:90, */ease:"Sine.easeIn"}, 0.1);
+
+
+            var social = document.getElementsByClassName("social");
+
+            TweenMax.staggerFrom(social, 0.4, {top:"+=80", ease:"Back.easeOut", delay:1.5}, 0.1)
+        }
+    </script>
+</head>
+<body>
+    <div id="wrapper" class="hide-load">
+        <div id="middleWrapper">
+        <div id="innerWrapper">
+            <aside>
+                <div id="aside-top">
+                    <h1 id="headline">Leah Whittaker</h1>
+                </div>
+
+                <h3 id="subhead">Front-End Web Developer</h3>
+            </aside>
+            <div id="content">
+                <div id="languages" class="content-line">JavaScript • HTML • CSS • PHP</div>
+                <div id="frameworks" class="content-line">AngularJS • Greensock TweenMax • Node.js • RequireJS</div>
+                <div id="automation" class="content-line">Gulp • Git • SVN • npm • Bower</div>
+                <div id="testing" class="content-line">Mocha • Chai • Karma • SauceLabs • Istanbul</div>
+                <div id="tools" class="content-line">Illustrator • Photoshop • Flash • After Effects</div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <footer class="hide-load">
+        <div id="social-wrapper">
+            <a class="social" href="./resume.pdf" target="_top"><img src="./images/print-icon.png"></a>
+            <a class="social" href="https://www.linkedin.com/in/leahcwhittaker"><img src="./images/iconmonstr-linkedin-3-icon-32.png"></a>
+            <a class="social" href="https://github.com/shortvnllalatte"><img src="./images/iconmonstr-github-3-icon-32.png"></a>
+            <a class="social" href="https://www.pinterest.com/leahchristine/"><img src="./images/iconmonstr-pinterest-3-icon-32.png"></a>
+            <a class="social" href="mailto:leahcwhittaker@gmail.com?Subject=Found your site..." target="_top"><img src="./images/email-icon-32.png"></a>
+        </div>
+    </footer>
+
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-24144163-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+</body>
+</html>
