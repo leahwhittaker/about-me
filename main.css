@@ -193,7 +193,7 @@ footer {
 }
 
 #print div {
-    background-image:url('./images/iconmonstr-printer-gray.png');
+    background-image:url('./images/iconmonstr-file-gray.png');
 }
 
 #linkedin div {
@@ -220,7 +220,7 @@ footer {
 @media (min-width: 1025px) {    
 
     #print div:hover {
-        background-image:url('./images/iconmonstr-printer-color.png');
+        background-image:url('./images/iconmonstr-file-color.png');
     }
 
     #linkedin div:hover {
