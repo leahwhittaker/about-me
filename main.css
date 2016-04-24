@@ -196,44 +196,48 @@ footer {
     background-image:url('./images/iconmonstr-printer-gray.png');
 }
 
-#print div:hover {
-    background-image:url('./images/iconmonstr-printer-color.png');
-}
-
 #linkedin div {
     background-image:url('./images/iconmonstr-linkedin-gray.png');
-}
-
-#linkedin div:hover {
-    background-image:url('./images/iconmonstr-linkedin-color.png');
 }
 
 #github div {
     background-image:url('./images/iconmonstr-github-gray.png');
 }
 
-#github div:hover {
-    background-image:url('./images/iconmonstr-github-color.png');
-}
-
 #pinterest div {
     background-image:url('./images/iconmonstr-pinterest-gray.png');
-}
-
-#pinterest div:hover {
-    background-image:url('./images/iconmonstr-pinterest-color.png');
 }
 
 #email div {
     background-image:url('./images/iconmonstr-email-gray.png');
 }
 
-#email div:hover {
-    background-image:url('./images/iconmonstr-email-color.png');
-}
-
 .social:last-child {
     margin-right: 0;
+}
+
+/*Desktop only*/
+@media (min-width: 1025px) {    
+
+    #print div:hover {
+        background-image:url('./images/iconmonstr-printer-color.png');
+    }
+
+    #linkedin div:hover {
+        background-image:url('./images/iconmonstr-linkedin-color.png');
+    }
+
+    #github div:hover {
+        background-image:url('./images/iconmonstr-github-color.png');
+    }
+
+    #pinterest div:hover {
+        background-image:url('./images/iconmonstr-pinterest-color.png');
+    }
+
+    #email div:hover {
+        background-image:url('./images/iconmonstr-email-color.png');
+    }
 }
 
 /* Portrait */
