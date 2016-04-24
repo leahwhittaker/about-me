@@ -24,12 +24,12 @@
 
             var lines = document.getElementsByClassName("content-line")
 
-            TweenMax.staggerFrom(lines, 0.5, {opacity:0, /*rotationX:90, */ease:"Sine.easeIn"}, 0.1);
+            TweenMax.staggerFrom(lines, 0.5, {opacity:0, /*rotationX:90, */ease:"Sine.easeIn"}, 0.4);
 
 
             var social = document.getElementsByClassName("social");
 
-            TweenMax.staggerFrom(social, 0.4, {top:"+=80", ease:"Back.easeOut", delay:1.5}, 0.1)
+            TweenMax.from(social, 0.6, {top:"+=80", ease:"Sine.easeOut", delay:2.5})
         }
     </script>
 </head>
@@ -45,22 +45,37 @@
                 <h3 id="subhead">Front-End Web Developer</h3>
             </aside>
             <div id="content">
-                <div id="languages" class="content-line">JavaScript • HTML • CSS • PHP</div>
-                <div id="frameworks" class="content-line">AngularJS • Greensock TweenMax • Node.js • RequireJS</div>
-                <div id="automation" class="content-line">Gulp • Git • SVN • npm • Bower</div>
-                <div id="testing" class="content-line">Mocha • Chai • Karma • SauceLabs • Istanbul</div>
-                <div id="tools" class="content-line">Illustrator • Photoshop • Flash • After Effects</div>
+                <div id="languages" class="content-line">JavaScript •&nbsp;HTML •&nbsp;CSS •&nbsp;PHP</div>
+                <div id="frameworks" class="content-line">AngularJS •&nbsp;Node.js •&nbsp;RequireJS •&nbsp;Bootstrap •&nbsp;D3.js</div>
+                <div id="automation" class="content-line">Gulp •&nbsp;Git •&nbsp;SVN •&nbsp;npm •&nbsp;Bower •&nbsp;Bamboo</div>
+                <div id="testing" class="content-line">Karma •&nbsp;Mocha •&nbsp;Chai •&nbsp;SauceLabs</div>
+                <div id="tools" class="content-line">Illustrator •&nbsp;Photoshop •&nbsp;Flash •&nbsp;After&nbsp;Effects</div>
             </div>
         </div>
         </div>
     </div>
     <footer class="hide-load">
         <div id="social-wrapper">
-            <a class="social" href="./resume.pdf" target="_top"><img src="./images/print-icon.png"></a>
-            <a class="social" href="https://www.linkedin.com/in/leahcwhittaker"><img src="./images/iconmonstr-linkedin-3-icon-32.png"></a>
-            <a class="social" href="https://github.com/shortvnllalatte"><img src="./images/iconmonstr-github-3-icon-32.png"></a>
-            <a class="social" href="https://www.pinterest.com/leahchristine/"><img src="./images/iconmonstr-pinterest-3-icon-32.png"></a>
-            <a class="social" href="mailto:leahcwhittaker@gmail.com?Subject=Found your site..." target="_top"><img src="./images/email-icon-32.png"></a>
+            <a id="print" class="social" href="./resume.pdf" target="_top">
+                <p>Print Resume</p>
+                <div></div>
+            </a>
+            <a id="linkedin" class="social" href="https://www.linkedin.com/in/leahcwhittaker">
+                <p>LinkedIn Profile</p>
+                <div></div>
+            </a>
+            <a id="github" class="social" href="https://github.com/shortvnllalatte">
+                <p>Github Profile</p>
+                <div></div>
+            </a>
+            <a id="pinterest" class="social" href="https://www.pinterest.com/leahchristine/">
+                <p>Pinterest Profile</p>
+                <div></div>
+            </a>
+            <a id="email" class="social" href="mailto:leahcwhittaker@gmail.com?Subject=Found your site..." target="_top">
+                <p>Email Me</p>
+                <div></div>
+            </a>
         </div>
     </footer>
 

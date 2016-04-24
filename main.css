@@ -99,38 +99,58 @@ aside {
 }
 
 #languages:before {
-    content: url('./images/iconmonstr-css-code-icon-24.png');
+    background-image: url('./images/iconmonstr-code-gray.png');
     display: inline-block;
     vertical-align: middle;
     margin-right: 1.3em;
+    background-size: 24px 24px;
+    width: 24px; 
+    height: 24px;
+    content:"";
 }
 
 #frameworks:before {
-    content: url('./images/iconmonstr-script-4-icon-24.png');
+    background-image: url('./images/iconmonstr-script-gray.png');
     display: inline-block;
     vertical-align: middle;
     margin-right: 1.3em;
+    background-size: 24px 24px;
+    width: 24px; 
+    height: 24px;
+    content:"";
 }
 
 #automation:before {
-    content: url('./images/fast-forward-5-icon-24.png');
+    background-image: url('./images/iconmonstr-arrow-gray.png');
     display: inline-block;
     vertical-align: middle;
     margin-right: 1.3em;
+    background-size: 24px 24px;
+    width: 24px; 
+    height: 24px;
+    content:"";
 }
 
 #tools:before {
-    content: url('./images/iconmonstr-tools-8-icon-24.png');
+    background-image: url('./images/iconmonstr-tools-gray.png');
     display: inline-block;
     vertical-align: middle;
     margin-right: 1.3em;
+    background-size: 24px 24px;
+    width: 24px; 
+    height: 24px;
+    content:"";
 }
 
 #testing:before {
-    content: url('./images/iconmonstr-flask-4-icon-24.png');
+    background-image: url('./images/iconmonstr-flask-gray.png');
     display: inline-block;
     vertical-align: middle;
     margin-right: 1.3em;
+    background-size: 24px 24px;
+    width: 24px; 
+    height: 24px;
+    content:"";
 }
 
 footer {
@@ -153,8 +173,67 @@ footer {
 
 .social {
     position:relative;
+    display: inline-block;
     top:40px;
     margin-right: 1em;
+    width: 32px;
+    height: 32px;
+}
+
+.social p {
+    display: none;
+}
+
+.social div {
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: 32px 32px;
+    width: 32px;
+    height: 32px;
+}
+
+#print div {
+    background-image:url('./images/iconmonstr-printer-gray.png');
+}
+
+#print div:hover {
+    background-image:url('./images/iconmonstr-printer-color.png');
+}
+
+#linkedin div {
+    background-image:url('./images/iconmonstr-linkedin-gray.png');
+}
+
+#linkedin div:hover {
+    background-image:url('./images/iconmonstr-linkedin-color.png');
+}
+
+#github div {
+    background-image:url('./images/iconmonstr-github-gray.png');
+}
+
+#github div:hover {
+    background-image:url('./images/iconmonstr-github-color.png');
+}
+
+#pinterest div {
+    background-image:url('./images/iconmonstr-pinterest-gray.png');
+}
+
+#pinterest div:hover {
+    background-image:url('./images/iconmonstr-pinterest-color.png');
+}
+
+#email div {
+    background-image:url('./images/iconmonstr-email-gray.png');
+}
+
+#email div:hover {
+    background-image:url('./images/iconmonstr-email-color.png');
+}
+
+.social:last-child {
+    margin-right: 0;
 }
 
 /* Portrait */
@@ -194,11 +273,8 @@ and (max-width: 1024px) {
 }
 
 @media only screen
-and (max-width: 768px)
+and (max-width: 760px)
 and (orientation: portrait) {
-    #innerWrapper {
-        width:17em;
-    }
 
     aside {
         width: 17em;
@@ -212,25 +288,60 @@ and (orientation: portrait) {
         font-size: 1.28em;
     }
 
+    #innerWrapper {
+        width:17em;
+        margin-top: -50px;
+    }
+
     #content {
         text-align: center;
-        margin-left: 22px;
+        margin-top: 30px;
     }
 
     #content div {
-        font-size: 1em;
-        margin-top: 1em;
-        text-indent: -22px;
+        font-size: 0.9em;
+        /*margin-top: 1em;*/
+        margin-bottom: 1.2em;
+        line-height: 1.5em;
     }
 
     #content :before {
-        -ms-transform: scale(0.7); /* IE 9 */
-        -webkit-transform: scale(0.7); /* Safari */
-        transform: scale(0.7);
+        -ms-transform: scale(0.8); /* IE 9 */
+        -webkit-transform: scale(0.8); /* Safari */
+        transform: scale(0.8);
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 0.2em;
     }
 
     footer {
         font-size: 0.4em;
+    }
+}
+
+@media only screen
+and (max-height: 570px) {
+
+    #wrapper {
+        display: block;
+        position: relative;
+        height: auto;
+    }
+
+    #middleWrapper {
+        display: block;
+        height: 100%;
+    }
+
+    #innerWrapper {
+        margin-top: 2em;
+        
+    }
+
+    footer {
+        position: relative;
+        margin-top: 40px;
     }
 }
 
@@ -266,6 +377,5 @@ and (orientation: landscape) {
 
     footer {
         font-size: 0.4em;
-        bottom: 2em;
     }
 }
