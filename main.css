@@ -98,8 +98,7 @@ aside {
     margin-bottom: 0;
 }
 
-#languages:before {
-    background-image: url('./images/iconmonstr-code-gray.png');
+.content-line:before {
     display: inline-block;
     vertical-align: middle;
     margin-right: 1.3em;
@@ -107,50 +106,26 @@ aside {
     width: 24px; 
     height: 24px;
     content:"";
+}
+
+#languages:before {
+    background-image: url('./images/iconmonstr-code-gray.png');
 }
 
 #frameworks:before {
     background-image: url('./images/iconmonstr-script-gray.png');
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 1.3em;
-    background-size: 24px 24px;
-    width: 24px; 
-    height: 24px;
-    content:"";
 }
 
 #automation:before {
     background-image: url('./images/iconmonstr-arrow-gray.png');
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 1.3em;
-    background-size: 24px 24px;
-    width: 24px; 
-    height: 24px;
-    content:"";
 }
 
 #tools:before {
     background-image: url('./images/iconmonstr-tools-gray.png');
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 1.3em;
-    background-size: 24px 24px;
-    width: 24px; 
-    height: 24px;
-    content:"";
 }
 
 #testing:before {
     background-image: url('./images/iconmonstr-flask-gray.png');
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 1.3em;
-    background-size: 24px 24px;
-    width: 24px; 
-    height: 24px;
-    content:"";
 }
 
 footer {
@@ -192,20 +167,12 @@ footer {
     height: 32px;
 }
 
-#print div {
-    background-image:url('./images/iconmonstr-file-gray.png');
-}
-
 #linkedin div {
     background-image:url('./images/iconmonstr-linkedin-gray.png');
 }
 
 #github div {
     background-image:url('./images/iconmonstr-github-gray.png');
-}
-
-#pinterest div {
-    background-image:url('./images/iconmonstr-pinterest-gray.png');
 }
 
 #email div {
@@ -216,12 +183,8 @@ footer {
     margin-right: 0;
 }
 
-/*Desktop only*/
+/*Icon hover for desktop only*/
 @media (min-width: 1025px) {    
-
-    #print div:hover {
-        background-image:url('./images/iconmonstr-file-color.png');
-    }
 
     #linkedin div:hover {
         background-image:url('./images/iconmonstr-linkedin-color.png');
@@ -229,10 +192,6 @@ footer {
 
     #github div:hover {
         background-image:url('./images/iconmonstr-github-color.png');
-    }
-
-    #pinterest div:hover {
-        background-image:url('./images/iconmonstr-pinterest-color.png');
     }
 
     #email div:hover {
@@ -304,7 +263,6 @@ and (orientation: portrait) {
 
     #content div {
         font-size: 0.9em;
-        /*margin-top: 1em;*/
         margin-bottom: 1.2em;
         line-height: 1.5em;
     }
@@ -346,40 +304,5 @@ and (max-height: 570px) {
     footer {
         position: relative;
         margin-top: 40px;
-    }
-}
-
-@media only screen
-and (max-width: 1024px)
-and (orientation: landscape) {
-    #innerWrapper {
-        width:17em;
-    }
-
-    aside {
-        width: 17em;
-    }
-
-    h1 {
-        font-size: 2.5em;
-    }
-
-    h3 {
-        font-size: 1.28em;
-    }
-
-    #content div {
-        font-size: 0.7em;
-        margin-top: 1em;
-    }
-
-    #content :before {
-        -ms-transform: scale(0.7); /* IE 9 */
-        -webkit-transform: scale(0.7); /* Safari */
-        transform: scale(0.7);
-    }
-
-    footer {
-        font-size: 0.4em;
     }
 }
